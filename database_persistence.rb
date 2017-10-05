@@ -14,6 +14,7 @@ class DatabasePersistence
 
   def disconnect
     @db.close
+  end
 
   def query(statement, *params)
     @logger.info "#{statement}: #{params}"
